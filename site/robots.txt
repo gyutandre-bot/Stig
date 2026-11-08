@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stig-site.vercel.app/sitemap.xml

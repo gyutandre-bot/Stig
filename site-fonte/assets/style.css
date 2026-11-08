@@ -1,0 +1,239 @@
+/* Stig — site institucional · tema grafite + laranja
+   Títulos: Playfair Display · Corpo, rótulos e NÚMEROS: DM Sans (regra da marca) */
+:root{
+  color-scheme:dark;
+  --bg:#161412;        /* grafite */
+  --bg2:#1F1C19;       /* grafite elevado */
+  --bg3:#2A2622;       /* cartões */
+  --line:rgba(245,240,232,.10);
+  --line2:rgba(245,240,232,.18);
+  --text:#F5F0E8;      /* cream */
+  --text2:#D6CEC2;     /* contraste ~11:1 */
+  --text3:#A99D8C;     /* contraste ~6,5:1 — mínimo usado em texto */
+  --orange:#E8451A;
+  --orange-hi:#FF6A3D; /* laranja para texto sobre grafite (contraste ~5,6:1) */
+  --orange-dim:rgba(232,69,26,.12);
+  --orange-line:rgba(232,69,26,.35);
+  --green:#86EFAC;
+  --green-dim:rgba(134,239,172,.10);
+  --cream:#F5F0E8;
+  --ink:#1A1208;
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:14px;
+  --max:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange-hi);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--orange);color:#fff;padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+
+/* números e dinheiro sempre em DM Sans, algarismos tabulares */
+.num,.price,.stat b,table td,.calc-out b{font-family:var(--sans);font-variant-numeric:tabular-nums lining-nums}
+
+/* ---------- topo ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(22,20,18,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.brand{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.brand svg{height:30px;width:auto}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{text-decoration:none;color:var(--text2);font-size:15px;font-weight:500;padding:8px 14px;border-radius:999px}
+.nav a:hover{color:var(--text);background:var(--bg3)}
+.nav a[aria-current=page]{color:var(--text);background:var(--bg3)}
+.top .btn{margin-left:8px}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line2);color:var(--text);border-radius:10px;padding:8px 12px;font:500 15px var(--sans);cursor:pointer}
+
+/* ---------- botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--orange);color:#fff;text-decoration:none;font:600 16px var(--sans);padding:13px 22px;border-radius:999px;border:0;cursor:pointer;transition:transform .15s,background .15s;min-height:48px}
+.btn:hover{background:#D33C14;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line2)}
+.btn.ghost:hover{background:var(--bg3)}
+.btn.sm{padding:9px 16px;font-size:14px;min-height:40px}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+
+/* ---------- tipografia ---------- */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-hi)}
+.eyebrow::before{content:"";width:24px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spacing:-.01em}
+h1{font-size:clamp(40px,6.4vw,76px)}
+h2{font-size:clamp(32px,4.4vw,52px);margin:14px 0 18px}
+h3{font-size:24px;margin-bottom:8px}
+h1 em,h2 em{font-style:italic;color:var(--orange-hi)}
+.lead{font-size:clamp(18px,1.6vw,20px);color:var(--text2);max-width:620px}
+.muted{color:var(--text3)}
+.small{font-size:14px}
+
+section{padding:96px 0}
+section.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.sec-head{max-width:720px;margin-bottom:48px}
+
+/* ---------- hero ---------- */
+.hero{padding:88px 0 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-220px;top:-160px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(232,69,26,.20),transparent 65%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{margin:18px 0 22px;max-width:900px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line2);border-radius:999px;padding:8px 14px;font-size:14px;color:var(--text2)}
+.badge b{color:var(--text);font-weight:600}
+
+/* ---------- grids e cartões ---------- */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--bg3);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.card p{color:var(--text2)}
+.card .ic{width:44px;height:44px;border-radius:12px;background:var(--orange-dim);border:1px solid var(--orange-line);display:grid;place-items:center;margin-bottom:18px;color:var(--orange-hi)}
+.card .ic svg{width:22px;height:22px}
+.stat{padding:28px;border-left:2px solid var(--orange)}
+.stat b{display:block;font-size:44px;font-weight:600;line-height:1;color:var(--orange-hi);margin-bottom:10px}
+.stat p{color:var(--text2);font-size:15px}
+
+/* ---------- público (home) ---------- */
+.aud{display:flex;flex-direction:column;text-decoration:none;transition:border-color .2s,transform .2s}
+.aud:hover{border-color:var(--orange-line);transform:translateY(-3px)}
+.aud .go{margin-top:auto;padding-top:20px;color:var(--orange-hi);font-weight:600}
+
+/* ---------- passos ---------- */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{position:relative;padding-top:56px}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);position:absolute;top:0;left:0;font:600 15px var(--sans);color:var(--orange-hi);border:1px solid var(--orange-line);border-radius:999px;padding:6px 12px}
+.step p{color:var(--text2);font-size:15px}
+
+/* ---------- tabela comparativa ---------- */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--bg3)}
+table{width:100%;border-collapse:collapse;min-width:620px}
+th,td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line);font-size:15px}
+thead th{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--text3);font-weight:600}
+tbody th{font-weight:500;color:var(--text2)}
+td.stig{color:var(--orange-hi);font-weight:600}
+tr:last-child th,tr:last-child td{border-bottom:0}
+.src{margin-top:14px;font-size:13px;color:var(--text3)}
+.src a{color:var(--text2)}
+
+/* ---------- calculadora ---------- */
+.calc{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:start}
+.field{margin-bottom:26px}
+.field .row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.field label{font-size:15px;color:var(--text2);font-weight:500}
+.field output{font-size:22px;font-weight:600;color:var(--text)}
+input[type=range]{width:100%;accent-color:var(--orange);height:28px}
+.calc-out{background:var(--bg3);border:1px solid var(--line);border-radius:var(--r);padding:8px 28px}
+.calc-out div{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);gap:16px}
+.calc-out div:last-child{border:0}
+.calc-out span{color:var(--text2);font-size:15px}
+.calc-out b{font-size:20px;font-weight:600;white-space:nowrap}
+.calc-out .save b{font-size:30px;color:var(--green)}
+.calc-out .bad b{color:#FCA5A5}
+
+/* ---------- planos ---------- */
+.plans{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:stretch}
+.plan{display:flex;flex-direction:column;position:relative}
+.plan.feat{border-color:var(--orange-line);background:linear-gradient(180deg,rgba(232,69,26,.08),var(--bg3) 40%)}
+.plan .tag{position:absolute;top:20px;right:20px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--orange);color:#fff;padding:5px 10px;border-radius:999px}
+.plan .name{font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3)}
+.price{display:flex;align-items:baseline;gap:6px;margin:14px 0 4px}
+.price b{font-size:52px;font-weight:600;line-height:1;letter-spacing:-.02em}
+.price span{color:var(--text3);font-size:16px}
+.plan ul{list-style:none;margin:22px 0 26px;display:grid;gap:12px}
+.plan li{display:flex;gap:10px;color:var(--text2);font-size:15px}
+.plan li::before{content:"";flex:0 0 18px;height:18px;margin-top:3px;border-radius:50%;background:var(--orange-dim) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF6A3D' stroke-width='3'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/11px no-repeat}
+.plan li.soon{color:var(--text3)}
+.plan li.soon::after{content:"em breve";margin-left:auto;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);border:1px solid var(--line2);border-radius:999px;padding:1px 8px;height:fit-content;white-space:nowrap;align-self:flex-start}
+.plan .btn{margin-top:auto}
+.fine{margin-top:12px;text-align:center;font-size:13px;color:var(--text3)}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--orange-hi);font-size:24px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:12px;color:var(--text2)}
+
+/* ---------- formulário ---------- */
+.form-sec{background:var(--bg2);border-top:1px solid var(--line)}
+.form-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.form{background:var(--bg3);border:1px solid var(--line);border-radius:18px;padding:32px}
+.form fieldset{border:0;margin-bottom:22px}
+.form legend{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--orange-hi);margin-bottom:14px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fi{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.fi label,.lbl{font-size:14px;font-weight:500;color:var(--text2)}
+.fi label .req{color:var(--orange-hi)}
+.fi input,.fi select,.fi textarea{background:var(--bg);border:1px solid var(--line2);border-radius:10px;color:var(--text);font:16px var(--sans);padding:12px 14px;min-height:48px;width:100%}
+.fi textarea{min-height:90px;resize:vertical}
+.fi input:focus,.fi select:focus,.fi textarea:focus{border-color:var(--orange);outline:none;box-shadow:0 0 0 3px var(--orange-dim)}
+.fi input[aria-invalid=true],.fi select[aria-invalid=true]{border-color:#FCA5A5}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.chip > span{display:inline-block;border:1px solid var(--line2);border-radius:999px;padding:9px 14px;font-size:14px;color:var(--text2);cursor:pointer;min-height:40px}
+.chip input:checked + span{background:var(--orange-dim);border-color:var(--orange);color:var(--text)}
+.chip input:focus-visible+span{outline:3px solid var(--orange-hi);outline-offset:2px}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--text2);margin-bottom:12px;cursor:pointer}
+.check input{width:20px;height:20px;margin-top:2px;accent-color:var(--orange);flex-shrink:0}
+.check a{color:var(--text)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.msg{margin-top:14px;padding:14px 16px;border-radius:10px;font-size:15px;display:none}
+.msg.err{display:block;background:rgba(252,165,165,.10);border:1px solid rgba(252,165,165,.35);color:#FECACA}
+.done{display:none;text-align:center;padding:32px 8px}
+.done h3{font-size:30px}
+.done p{color:var(--text2);margin-top:8px}
+.form.sent form{display:none}
+.form.sent .done{display:block}
+.perks{display:grid;gap:14px;margin-top:28px}
+.perks li{list-style:none;display:flex;gap:12px;color:var(--text2)}
+.perks li b{color:var(--text);font-weight:600}
+
+/* ---------- rodapé ---------- */
+footer{border-top:1px solid var(--line);padding:56px 0 36px;font-size:14px;color:var(--text3)}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+.foot h4{font:600 13px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--text2);margin-bottom:14px}
+.foot ul{list-style:none;display:grid;gap:10px}
+.foot a{text-decoration:none;color:var(--text3)}
+.foot a:hover{color:var(--text)}
+.legal{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+/* ---------- páginas de texto (privacidade/termos) ---------- */
+.doc{max-width:760px;padding:72px 24px 96px;margin:0 auto}
+.doc h1{font-size:clamp(36px,5vw,52px);margin-bottom:12px}
+.doc h2{font-size:26px;margin:40px 0 12px}
+.doc p,.doc li{color:var(--text2);margin-bottom:12px}
+.doc ul{padding-left:22px}
+
+/* ---------- responsivo ---------- */
+@media (max-width:960px){
+  .g4,.steps{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:1fr 1fr}
+  .calc,.form-grid{grid-template-columns:1fr}
+  .form-grid{gap:32px}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  section{padding:72px 0}
+  .hero{padding:56px 0 56px}
+  .menu-btn{display:block}
+  .nav{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--bg2);border-bottom:1px solid var(--line);padding:12px 16px}
+  .nav.open{display:flex}
+  .nav a{padding:14px}
+  .top .btn{display:none}
+  .g2,.g3,.plans{grid-template-columns:1fr}
+  .f2{grid-template-columns:1fr}
+  .form{padding:22px}
+  .wrap{padding:0 16px}
+}
+@media (max-width:480px){
+  .g4,.steps{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .price b{font-size:44px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
