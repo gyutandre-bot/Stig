@@ -40,7 +40,8 @@ a{color:inherit}
 .top{position:sticky;top:0;z-index:50;background:rgba(22,20,18,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;gap:28px;height:68px}
 .brand{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
-.brand img{height:32px;width:auto}
+.brand img{height:42px;width:auto}
+footer .brand img{height:48px}
 .nav{display:flex;gap:4px;margin-left:auto}
 .nav a{text-decoration:none;color:var(--text2);font-size:15px;font-weight:500;padding:8px 14px;border-radius:999px}
 .nav a:hover{color:var(--text);background:var(--bg3)}

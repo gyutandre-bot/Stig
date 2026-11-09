@@ -18,7 +18,7 @@ PAGES = {
                           "Condições do pré-cadastro e da oferta de lançamento do Stig.", ""),
 }
 
-LOGO = '<img src="assets/logo-stig-claro.png" alt="Stig" width="71" height="32">'
+LOGO = '<img src="assets/logo-stig-claro.png" alt="Stig" width="93" height="42">'
 
 def head(title, desc, path):
     url = SITE + "/" + ("" if path == "index.html" else path.replace(".html", ""))
