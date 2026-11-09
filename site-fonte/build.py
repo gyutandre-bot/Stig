@@ -18,16 +18,14 @@ PAGES = {
                           "Condições do pré-cadastro e da oferta de lançamento do Stig.", ""),
 }
 
-LOGO = ('<svg viewBox="0 0 92 36" role="img" aria-label="Stig"><text x="0" y="28" '
-        'font-family="Playfair Display, Georgia, serif" font-size="34" font-weight="500" fill="#F5F0E8">st'
-        '<tspan font-style="italic" fill="#FF6A3D">i</tspan>g</text></svg>')
+LOGO = '<img src="assets/logo-stig-claro.png" alt="Stig" width="71" height="32">'
 
 def head(title, desc, path):
     url = SITE + "/" + ("" if path == "index.html" else path.replace(".html", ""))
     org = {
         "@context": "https://schema.org", "@type": "Organization", "name": "Stig",
         "legalName": "Stig", "taxID": "68.075.074/0001-20", "url": SITE,
-        "logo": SITE + "/assets/og.png",
+        "logo": SITE + "/assets/logo-stig.png",
         "address": {"@type": "PostalAddress", "addressLocality": "São José dos Campos", "addressRegion": "SP", "addressCountry": "BR"},
     }
     return f"""<!doctype html>
@@ -49,7 +47,8 @@ def head(title, desc, path):
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#161412">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-64.png" sizes="64x64" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
