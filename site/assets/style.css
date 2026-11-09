@@ -190,7 +190,7 @@ input[type=range]{width:100%;accent-color:var(--orange);height:28px}
 .form.sent form{display:none}
 .form.sent .done{display:block}
 .perks{display:grid;gap:14px;margin-top:28px}
-.perks li{list-style:none;display:flex;gap:12px;color:var(--text2)}
+.perks li{list-style:none;color:var(--text2)}
 .perks li b{color:var(--text);font-weight:600}
 
 /* ---------- rodapé ---------- */

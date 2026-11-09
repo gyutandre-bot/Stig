@@ -3,7 +3,7 @@ import json, pathlib, shutil
 
 ROOT = pathlib.Path(__file__).parent
 SRC, DIST = ROOT / "src", ROOT.parent / "site"
-SITE = "https://stig-site.vercel.app"  # trocar por https://stig.com.br quando o domínio for ligado
+SITE = "https://stig-site-two.vercel.app"  # trocar por https://stig.com.br quando o domínio for ligado
 
 PAGES = {
     "index.html":        ("Stig — Delivery justo: zero comissão, 100% do frete ao entregador",
