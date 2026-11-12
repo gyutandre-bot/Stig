@@ -415,3 +415,5 @@ picture.side-art img{-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 5
 .dor-photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 25%}
 .dor-photo figcaption{padding:20px 22px 24px}
 .dor-photo .xlist{margin-top:0}
+.hero-photo{max-width:680px}
+.hero-photo img{border-radius:22px;-webkit-mask-image:radial-gradient(ellipse 62% 66% at 50% 50%,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse 62% 66% at 50% 50%,#000 70%,transparent 100%)}
