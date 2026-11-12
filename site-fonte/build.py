@@ -6,10 +6,10 @@ SRC, DIST = ROOT / "src", ROOT.parent / "site"
 SITE = "https://stig-site-two.vercel.app"  # trocar por https://stig.com.br quando o domínio for ligado
 
 PAGES = {
-    "index.html":        ("Stig — Delivery justo: zero comissão, 100% do frete ao entregador",
+    "index.html":        ("Stig — Seu caminho para o sabor. Delivery sem comissão",
                           "Stig é o delivery de São José dos Campos sem comissão por pedido: restaurante paga mensalidade fixa, entregador fica com 100% do frete e você paga preço de balcão.", "stig"),
-    "restaurantes.html": ("Stig para restaurantes — Delivery sem comissão, a partir de R$ 200/mês",
-                          "Venda por delivery sem comissão por pedido. Mensalidade fixa a partir de R$ 200, preço de balcão e 30 dias grátis. Lançamento em São José dos Campos.", "rest"),
+    "restaurantes.html": ("Stig para restaurantes — Delivery sem comissão, a partir de R$ 149/mês",
+                          "Venda por delivery sem comissão por pedido. Mensalidade fixa a partir de R$ 149, preço de balcão e 30 dias grátis. Lançamento em São José dos Campos.", "rest"),
     "entregadores.html": ("Stig para entregadores — 100% do frete é seu",
                           "No Stig o entregador fica com 100% do frete, sem taxa por corrida, com saque via Pix. Cadastre-se para o lançamento em São José dos Campos.", "ent"),
     "privacidade.html":  ("Política de Privacidade — Stig",

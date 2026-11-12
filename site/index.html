@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Stig — Delivery justo: zero comissão, 100% do frete ao entregador</title>
+<title>Stig — Seu caminho para o sabor. Delivery sem comissão</title>
 <meta name="description" content="Stig é o delivery de São José dos Campos sem comissão por pedido: restaurante paga mensalidade fixa, entregador fica com 100% do frete e você paga preço de balcão.">
 <link rel="canonical" href="https://stig-site-two.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Stig">
-<meta property="og:title" content="Stig — Delivery justo: zero comissão, 100% do frete ao entregador">
+<meta property="og:title" content="Stig — Seu caminho para o sabor. Delivery sem comissão">
 <meta property="og:description" content="Stig é o delivery de São José dos Campos sem comissão por pedido: restaurante paga mensalidade fixa, entregador fica com 100% do frete e você paga preço de balcão.">
 <meta property="og:url" content="https://stig-site-two.vercel.app/">
 <meta property="og:image" content="https://stig-site-two.vercel.app/assets/og.png">
@@ -36,102 +36,232 @@
 </div></header>
 <main id="conteudo">
 <section class="hero">
-  <div class="wrap">
-    <span class="eyebrow">Pré-lançamento · São José dos Campos</span>
-    <h1>Delivery justo para quem <em>cozinha, entrega</em> e pede.</h1>
-    <p class="lead">O Stig não cobra comissão por pedido. O restaurante paga uma mensalidade fixa e vende pelo preço do balcão, o entregador fica com 100% do frete e você paga menos.</p>
-    <div class="cta">
-      <a class="btn" href="#cadastro">Avise-me no lançamento</a>
-      <a class="btn ghost" href="#como-funciona">Entenda como funciona</a>
+  <div class="wrap hero-split">
+    <div>
+      <span class="eyebrow">Pré-lançamento · São José dos Campos</span>
+      <h1>Seu caminho <em>para o sabor.</em></h1>
+      <p class="lead">O Stig é um ecossistema justo para o delivery: zero comissão para o restaurante, 100% do frete para o entregador e preço de balcão para quem pede.</p>
+      <div class="cta">
+        <a class="btn" href="#cadastro">Quero pedir no Stig</a>
+        <a class="btn ghost" href="restaurantes.html">Sou restaurante</a>
+        <a class="btn ghost" href="entregadores.html">Sou entregador</a>
+      </div>
     </div>
-    <div class="badges" aria-label="Destaques">
-      <span class="badge"><b class="num">0%</b> de comissão por pedido</span>
-      <span class="badge"><b class="num">100%</b> do frete ao entregador</span>
-      <span class="badge"><b>Preço de balcão</b> no app</span>
-      <span class="badge">Lançamento previsto para o <b>1º trimestre de 2027</b></span>
+    <picture class="hero-art hero-art-wide">
+      <source type="image/webp" srcset="assets/restaurante-640.webp 640w, assets/restaurante.webp 1024w" sizes="(max-width:960px) 92vw, 600px">
+      <img src="assets/restaurante.jpg" alt="Ilustração do app Stig no celular ao lado de uma sacola do Stig, hambúrguer, poke, pizza e bebida" width="1024" height="1030" fetchpriority="high">
+    </picture>
+  </div>
+</section>
+
+<section class="alt" id="a-dor">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">A dor do mercado</span>
+      <h2>O delivery cresceu. <em>Quem trabalha, não.</em></h2>
+      <p class="lead">O modelo de comissão tira um pedaço de cada pedido. O restaurante perde margem, o entregador roda por pouco e o cliente paga mais caro.</p>
+    </div>
+    <div class="pain-grid">
+      <article class="pain rv">
+        <picture><source type="image/webp" srcset="assets/dor-restaurante.webp"><img src="assets/dor-restaurante.webp" alt="Dono de restaurante preocupado olhando o notebook" width="640" height="454" loading="lazy"></picture>
+        <div class="pain-body">
+          <span class="who">O restaurante</span>
+          <ul class="xlist"><li>Comissão alta em cada pedido</li><li>Cardápio mais caro no app</li><li>Sem os dados dos próprios clientes</li></ul>
+        </div>
+      </article>
+      <article class="pain rv">
+        <picture><source type="image/webp" srcset="assets/dor-entregador.webp"><img src="assets/dor-entregador.webp" alt="Entregador preocupado olhando o celular" width="640" height="614" loading="lazy"></picture>
+        <div class="pain-body">
+          <span class="who">O entregador</span>
+          <ul class="xlist"><li>Frete precário</li><li>Ganhos baixos e incertos</li><li>Pouco apoio no dia a dia</li></ul>
+        </div>
+      </article>
+      <article class="pain receipt-wrap rv">
+        <span class="who">Quem pede</span>
+        <div class="receipt" aria-label="Exemplo de um prato de R$ 45 vendido por app com comissão">
+          <div class="r-head"><span class="r-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l1-5h16l1 5M4 9v11h16V9M3 9h18"/></svg></span><div><b>App com comissão</b><small>exemplo de um prato</small></div></div>
+          <div class="r-row"><span>Preço no balcão</span><b class="num">R$ 45,00</b></div>
+          <div class="r-row"><span>Preço no app</span><b class="num">R$ 52,88 <em class="up">+17,5%</em></b></div>
+          <div class="r-row"><span>Comissão e taxas do app</span><b class="num neg">– R$ 13,85</b></div>
+          <div class="r-row r-total"><span>Restaurante recebe</span><b class="num">R$ 39,02</b></div>
+          <div class="r-foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>O cliente paga mais e o restaurante recebe menos</div>
+        </div>
+        <ul class="xlist" style="margin-top:4px"><li>Paga mais caro pelo mesmo prato</li></ul>
+      </article>
+    </div>
+    <p class="src rv">Exemplo com o Plano Entrega do iFood (23% de comissão + 3,2% de pagamento online) e o aumento médio de 17,5% no cardápio dos apps (pesquisa Abrasel com 1.600 restaurantes, jul/2022).</p>
+  </div>
+</section>
+
+<section id="como-funciona">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">A solução</span>
+      <h2>Um ecossistema <em>justo para o delivery.</em></h2>
+      <p class="lead">O Stig não é mais um app de entrega. O pagamento de cada pedido é dividido na hora e cada parte vai direto para quem fez o trabalho.</p>
+    </div>
+    <div class="eco rv" aria-hidden="true">
+      <svg viewBox="0 0 520 300" class="eco-ring">
+        <circle cx="260" cy="150" r="104" fill="none" stroke="#E8451A" stroke-width="3" opacity=".55"/>
+        <circle cx="260" cy="150" r="128" fill="none" stroke="#E8451A" stroke-width="1" opacity=".25" stroke-dasharray="4 8"/>
+        <circle cx="260" cy="150" r="62" fill="#2A2622" stroke="rgba(245,240,232,.18)"/>
+        <image href="assets/logo-stig-claro.png" x="214" y="129" width="92" height="42"/>
+        <g font-family="DM Sans, system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+          <circle cx="260" cy="46" r="34" fill="#1F1C19" stroke="#E8451A" stroke-width="2"/><text x="260" y="51" fill="#F5F0E8">Cliente</text>
+          <circle cx="170" cy="202" r="34" fill="#1F1C19" stroke="#E8451A" stroke-width="2"/><text x="170" y="198" fill="#F5F0E8">Restau-</text><text x="170" y="214" fill="#F5F0E8">rante</text>
+          <circle cx="350" cy="202" r="34" fill="#1F1C19" stroke="#E8451A" stroke-width="2"/><text x="350" y="198" fill="#F5F0E8">Entre-</text><text x="350" y="214" fill="#F5F0E8">gador</text>
+        </g>
+      </svg>
+    </div>
+    <div class="grid g3 eco-cards">
+      <a class="card person rv" href="restaurantes.html">
+        <picture><source type="image/webp" srcset="assets/sol-restaurante.webp"><img src="assets/sol-restaurante.webp" alt="Chef sorrindo de braços cruzados" width="640" height="639" loading="lazy"></picture>
+        <div class="person-body">
+          <span class="who">Restaurante</span>
+          <h3>Comissão zero</h3>
+          <p>Mensalidade fixa de <span class="num">R$ 149</span> a <span class="num">R$ 299</span>, vendendo <span class="num">R$ 3 mil</span> ou <span class="num">R$ 300 mil</span>. O valor dos pratos é todo seu.</p>
+          <span class="go">Ver Stig para restaurantes →</span>
+        </div>
+      </a>
+      <a class="card person rv" href="entregadores.html">
+        <picture><source type="image/webp" srcset="assets/sol-entregador.webp"><img src="assets/sol-entregador.webp" alt="Entregador sorrindo e fazendo sinal de positivo" width="640" height="712" loading="lazy"></picture>
+        <div class="person-body">
+          <span class="who">Entregador</span>
+          <h3>O frete é todo seu</h3>
+          <p>Cada real do frete vai para quem entrega, direto na carteira do app, com saque via Pix.</p>
+          <span class="go">Ver Stig para entregadores →</span>
+        </div>
+      </a>
+      <a class="card person rv" href="#planos-usuario">
+        <picture><source type="image/webp" srcset="assets/sol-consumidor.webp"><img src="assets/sol-consumidor.webp" alt="Mulher sorrindo enquanto faz um pedido pelo celular" width="640" height="738" loading="lazy"></picture>
+        <div class="person-body">
+          <span class="who">Quem pede</span>
+          <h3>Preço de balcão</h3>
+          <p>O mesmo preço do salão, sem cardápio inflado e com tudo às claras na hora de pagar.</p>
+          <span class="go">Ver planos para quem pede →</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="alt" id="como-funciona">
+<section class="alt" id="diferenciais">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Como funciona</span>
-      <h2>Cada real vai para <em>quem fez o trabalho.</em></h2>
-      <p class="lead">Nos apps tradicionais, uma parte de cada pedido fica com a plataforma, e o restaurante sobe o cardápio para compensar. No Stig o pagamento é dividido na hora, direto para cada um.</p>
+    <div class="sec-head rv">
+      <span class="eyebrow">Diferencial tecnológico</span>
+      <h2>Vamos além <em>do pedido.</em></h2>
+      <p class="lead">Recursos que estão no caminho do Stig para deixar o delivery mais próximo, mais social e mais inteligente.</p>
     </div>
-    <div class="grid g3">
-      <div class="card">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11V7a7 7 0 0 1 14 0v4M4 11l1 9h14l1-9"/></svg></div>
-        <h3>Restaurante</h3>
-        <p>Recebe <b>100% do valor dos pratos</b>. Paga só uma mensalidade fixa, venda R$ 3 mil ou R$ 300 mil no mês.</p>
-      </div>
-      <div class="card">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17h4l3-7h4l1 7M13 10l-2-4H8"/></svg></div>
-        <h3>Entregador</h3>
-        <p>Recebe <b>100% do frete</b> de cada corrida, creditado na carteira e sacável via Pix. O Stig não retém nada.</p>
-      </div>
-      <div class="card">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <h3>Você, que pede</h3>
-        <p>Paga o <b>preço do salão</b>, sem cardápio inflado. Só existe uma pequena taxa de serviço para cobrir o pagamento.</p>
-      </div>
-    </div>
-
-    <h3 style="margin:56px 0 16px">Exemplo de um pedido de <span class="num">R$ 45</span> com entrega de <span class="num">2</span> km</h3>
-    <div class="tbl-wrap">
-      <table>
-        <caption class="hp">Comparação ilustrativa do valor pago pelo cliente</caption>
-        <thead><tr><th scope="col">O que você paga</th><th scope="col">App com comissão</th><th scope="col">Stig</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Pratos</th><td class="num">R$ 52,88 <span class="muted small">(cardápio 17,5% mais caro)</span></td><td class="num stig">R$ 45,00 <span class="small">(preço de balcão)</span></td></tr>
-          <tr><th scope="row">Frete (fica 100% com o entregador no Stig)</th><td class="num">R$ 8,00</td><td class="num stig">R$ 8,00</td></tr>
-          <tr><th scope="row">Taxa de serviço</th><td class="num">R$ 0,99</td><td class="num stig">R$ 2,55 <span class="small">(1,99% + R$ 1,50)</span></td></tr>
-          <tr><th scope="row"><b>Total</b></th><td class="num"><b>R$ 61,87</b></td><td class="num stig"><b>R$ 55,55</b></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="src">Exemplo ilustrativo. Aumento médio de 17,5% no cardápio dos apps: pesquisa Abrasel com 1.600 restaurantes (jul/2022). Frete pela regra do Stig: R$ 5,00 + R$ 1,50 por km. Assinantes Stig Pro e Família não pagam os R$ 1,50.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Para quem é o Stig</span>
-      <h2>Um ecossistema, <em>três lados.</em></h2>
-    </div>
-    <div class="grid g3">
-      <a class="card aud" href="restaurantes.html">
-        <span class="eyebrow">Restaurantes</span>
-        <h3 style="margin-top:14px">Zero comissão, mensalidade fixa</h3>
-        <p>Planos a partir de <span class="num">R$ 200</span> por mês, com 30 dias grátis. Calcule quanto você economiza.</p>
-        <span class="go">Ver Stig para restaurantes →</span>
-      </a>
-      <a class="card aud" href="entregadores.html">
-        <span class="eyebrow">Entregadores</span>
-        <h3 style="margin-top:14px"><span class="num">100%</span> do frete é seu</h3>
-        <p>Sem taxa por corrida, com saque via Pix. Cadastro aberto para o lançamento.</p>
-        <span class="go">Ver Stig para entregadores →</span>
-      </a>
-      <a class="card aud" href="#planos-usuario">
-        <span class="eyebrow">Quem pede</span>
-        <h3 style="margin-top:14px">Preço de balcão no app</h3>
-        <p>Use de graça ou assine o Stig Pro e receba 2% de volta em cada pedido.</p>
-        <span class="go">Ver planos →</span>
-      </a>
+    <div class="phones">
+      <figure class="phone-card rv">
+        <div class="phone">
+          <div class="ph-bar"><img src="assets/logo-stig-claro.png" alt="" width="48" height="22"><span class="ph-dots" aria-hidden="true"></span></div>
+          <div class="ph-title live">Gastronomia ao vivo <span class="live-pill">ao vivo</span></div>
+          <picture class="ph-photo"><source type="image/webp" srcset="assets/chef-ao-vivo.webp"><img src="assets/chef-ao-vivo.webp" alt="Chef preparando um prato flambado na cozinha" width="600" height="641" loading="lazy"></picture>
+          <div class="ph-foot"><span class="ph-av">FN</span><div><b>Forneria do Vale</b><small>Seu pedido está no fogo</small></div></div>
+        </div>
+        <figcaption><span class="soon-pill">Em breve</span><h3>Gastronomia ao vivo</h3><p>Assista ao preparo do seu pedido em tempo real, direto da cozinha do restaurante.</p></figcaption>
+      </figure>
+      <figure class="phone-card rv">
+        <div class="phone">
+          <div class="ph-bar"><img src="assets/logo-stig-claro.png" alt="" width="48" height="22"><span class="ph-dots" aria-hidden="true"></span></div>
+          <div class="ph-title blue">Sala da Ana · 4 pessoas</div>
+          <div class="ph-room">
+            <div class="room-row"><span class="ph-av a1">AN</span><span>Ana</span><b class="num">R$ 38,00</b></div>
+            <div class="room-row"><span class="ph-av a2">LU</span><span>Lucas</span><b class="num">R$ 42,50</b></div>
+            <div class="room-row"><span class="ph-av a3">BE</span><span>Bia</span><b class="num">R$ 29,90</b></div>
+            <div class="room-row"><span class="ph-av a4">RA</span><span>Rafa</span><b class="num">R$ 35,00</b></div>
+            <div class="room-total"><span>Cada um paga o seu</span><b class="num">R$ 145,40</b></div>
+            <div class="room-btn">Convidar amigos</div>
+          </div>
+        </div>
+        <figcaption><span class="soon-pill">Em breve</span><h3>Salas virtuais</h3><p>Pedido em grupo: cada amigo escolhe o seu prato e a conta já vem dividida.</p></figcaption>
+      </figure>
+      <figure class="phone-card rv">
+        <div class="phone">
+          <div class="ph-bar"><img src="assets/logo-stig-claro.png" alt="" width="48" height="22"><span class="ph-dots" aria-hidden="true"></span></div>
+          <div class="ph-title green">IA e nutrição</div>
+          <div class="ph-ai">
+            <div class="ai-dish"><b>Bowl de frango grelhado</b><small>Sugestão para você</small></div>
+            <div class="ai-macros">
+              <div><b class="num">520</b><small>kcal</small></div><div><b class="num">38 g</b><small>proteína</small></div><div><b class="num">54 g</b><small>carbo</small></div>
+            </div>
+            <ul class="ai-list"><li>Ofertas do seu jeito</li><li>Dados nutricionais em cada prato</li><li>Rotas mais rápidas para o entregador</li></ul>
+          </div>
+        </div>
+        <figcaption><span class="soon-pill">Em breve</span><h3>IA e nutrição</h3><p>Sugestões personalizadas, informação nutricional dos pratos e rotas otimizadas.</p></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="alt" id="planos-usuario">
+<section id="resultado">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head rv">
+      <span class="eyebrow">Na prática</span>
+      <h2>Mais dinheiro <em>no caixa do restaurante.</em></h2>
+      <p class="lead">Um restaurante que vende <span class="num">R$ 30 mil</span> por mês no delivery.</p>
+    </div>
+    <div class="cash rv">
+      <div class="cash-card">
+        <div class="cash-h muted-h">App com comissão<small>Plano Entrega do iFood</small></div>
+        <div class="r-row"><span>Vendas no mês</span><b class="num">R$ 30.000</b></div>
+        <div class="r-row"><span>Comissão e taxas (26,2%)</span><b class="num neg">– R$ 7.860</b></div>
+        <div class="r-row"><span>Mensalidade</span><b class="num neg">– R$ 150</b></div>
+        <div class="r-row r-total"><span>Fica com o restaurante</span><b class="num">R$ 21.990</b></div>
+      </div>
+      <div class="cash-arrow" aria-hidden="true">→</div>
+      <div class="cash-card stig">
+        <div class="cash-h">Stig Pro<small>mensalidade fixa, sem comissão</small></div>
+        <div class="r-row"><span>Vendas no mês</span><b class="num">R$ 30.000</b></div>
+        <div class="r-row"><span>Comissão</span><b class="num">R$ 0</b></div>
+        <div class="r-row"><span>Mensalidade</span><b class="num neg">– R$ 299</b></div>
+        <div class="r-row r-total"><span>Fica com o restaurante</span><b class="num">R$ 29.701</b></div>
+      </div>
+      <div class="cash-win"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><b class="num">+ R$ 7.711 por mês</b><span>no caixa do restaurante, cerca de <span class="num">35%</span> a mais</span></div></div>
+    </div>
+    <p class="src rv">Taxas do iFood conforme a tabela pública do Plano Entrega em 2026. <a href="restaurantes.html#calculadora">Faça a conta com os números do seu restaurante →</a></p>
+  </div>
+</section>
+
+<section class="alt" id="onde">
+  <div class="wrap two-col">
+    <div class="rv">
+      <span class="eyebrow">Onde começamos</span>
+      <h2>Começamos por <em>São José dos Campos.</em></h2>
+      <p class="lead">Lançamos cidade a cidade, com restaurantes e entregadores da região desde o primeiro dia. Depois, a expansão segue por polos regionais.</p>
+      <ol class="timeline">
+        <li class="now"><b>Agora</b><span>Pré-cadastro aberto para restaurantes, entregadores e clientes</span></li>
+        <li><b class="num">1º tri/2027</b><span>Lançamento em São José dos Campos</span></li>
+        <li><b class="num">2º sem/2027</b><span>Chegada a São Paulo</span></li>
+        <li><b>Depois</b><span>Novas cidades, por polos regionais</span></li>
+      </ol>
+    </div>
+    <div class="map rv" aria-hidden="true">
+      <svg viewBox="0 0 420 360">
+        <path d="M60 210c10-60 40-120 110-140 50-14 90-30 130-10 40 20 70 50 70 100 0 40-10 70-40 100-30 30-80 40-130 38-50-2-90-14-120-40-14-12-22-28-20-48z" fill="#2A2622" stroke="rgba(245,240,232,.16)" stroke-width="2"/>
+        <g stroke="#E8451A" stroke-width="4" fill="none" stroke-linecap="round" opacity=".9">
+          <path d="M226 198C190 170 150 150 98 150"/><path d="M226 198c40-34 80-60 128-70"/><path d="M226 198c20 40 40 70 80 96"/><path d="M226 198c-30 30-60 54-110 66"/><path d="M226 198c4-50 0-90-14-130"/>
+        </g>
+        <g fill="#E8451A"><path d="M98 150l14-8-2 16z"/><path d="M354 128l-14-4 10 14z"/><path d="M306 294l-6-14 16 4z"/><path d="M116 264l12-10 2 16z"/><path d="M212 68l-8 14 16-2z"/></g>
+        <circle cx="226" cy="198" r="30" fill="#E8451A" opacity=".18"/>
+        <path d="M226 150c-15 0-27 12-27 27 0 20 27 46 27 46s27-26 27-46c0-15-12-27-27-27z" fill="#E8451A"/>
+        <circle cx="226" cy="176" r="10" fill="#F5F0E8"/>
+        <rect x="150" y="232" width="152" height="40" rx="12" fill="#161412" stroke="rgba(245,240,232,.2)"/>
+        <text x="226" y="258" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif" font-size="15" font-weight="600" fill="#F5F0E8">São José dos Campos</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="planos-usuario">
+  <div class="wrap">
+    <div class="sec-head rv">
       <span class="eyebrow">Planos para quem pede</span>
       <h2>Use de graça. <em>Assine se valer a pena.</em></h2>
       <p class="lead">Todo mundo paga o preço do balcão. A assinatura tira a taxa fixa por pedido e devolve parte do que você gasta.</p>
     </div>
-    <div class="grid g3">
+    <div class="grid g3 rv">
       <div class="card plan">
         <span class="name">Grátis</span>
         <div class="price"><b>R$ 0</b></div>
@@ -156,33 +286,38 @@
   </div>
 </section>
 
-<section>
+<section class="alt" id="sobre">
   <div class="wrap">
-    <div class="grid g2" style="gap:56px;align-items:start">
-      <div>
-        <span class="eyebrow">Como o Stig ganha dinheiro</span>
-        <h2>Sem pegadinha: <em>só assinaturas.</em></h2>
-        <p class="lead">A receita do Stig vem das mensalidades de restaurantes e das assinaturas opcionais de entregadores e usuários. Não ficamos com nenhuma parte do valor dos pratos nem do frete.</p>
-      </div>
-      <div>
-        <span class="eyebrow">Quem somos</span>
-        <h2>Feito em <em>São José dos Campos.</em></h2>
-        <p class="lead">O Stig foi fundado por Thiago e André para provar que dá para ter delivery sem tirar margem de quem trabalha. Começamos por São José dos Campos e, na sequência, São Paulo.</p>
-      </div>
+    <div class="manifesto rv">
+      <div><span class="m-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l1-5h16l1 5M4 9v11h16V9M3 9h18"/></svg></span>Mais margem ao restaurante</div>
+      <div><span class="m-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17h4l3-7h4l1 7M13 10l-2-4H8"/></svg></span>Dignidade ao entregador</div>
+      <div><span class="m-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/><circle cx="9" cy="7" r="4"/></svg></span>Preço justo ao consumidor</div>
+    </div>
+    <div class="grid g2 rv" style="margin-top:28px">
+      <div class="card"><span class="who">Como o Stig ganha dinheiro</span><p style="margin-top:8px">Só com assinaturas: a mensalidade dos restaurantes e os planos opcionais de entregadores e clientes. Nenhuma parte do valor dos pratos ou do frete fica com o Stig.</p></div>
+      <div class="card"><span class="who">Quem somos</span><p style="margin-top:8px">O Stig nasceu em São José dos Campos, fundado por Thiago Bernardino e André Cavalcante, para provar que dá para ter delivery sem tirar a margem de quem trabalha.</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt" id="faq">
+<section id="faq">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">Perguntas frequentes</span><h2>Dúvidas comuns</h2></div>
-    <div class="faq">
-      <details><summary>Quando o Stig começa a funcionar?</summary><p>O lançamento em São José dos Campos está previsto para o 1º trimestre de 2027. São Paulo vem na sequência. Deixe seu contato e avisamos quando o app estiver disponível.</p></details>
+    <div class="sec-head rv"><span class="eyebrow">Perguntas frequentes</span><h2>Ficou alguma dúvida?</h2></div>
+    <div class="faq rv">
+      <details><summary>Quando o Stig começa a funcionar?</summary><p>O lançamento em São José dos Campos está previsto para o 1º trimestre de 2027, e São Paulo vem na sequência. Deixe seu contato e avisamos quando o app estiver disponível.</p></details>
       <details><summary>Por que a comida sai mais barata?</summary><p>Sem comissão por pedido, o restaurante não precisa aumentar o cardápio no delivery. No app, ele pratica o mesmo preço do salão.</p></details>
       <details><summary>Quem paga o frete?</summary><p>Quem pede. O valor é calculado pela distância (R$ 5,00 + R$ 1,50 por km) e vai inteiro para o entregador.</p></details>
       <details><summary>O que é a taxa de serviço?</summary><p>São 1,99% do pedido para cobrir o custo do meio de pagamento, mais R$ 1,50 por pedido para quem não é assinante. Assinantes Stig Pro e Família não pagam os R$ 1,50.</p></details>
       <details><summary>Posso cancelar a assinatura quando quiser?</summary><p>Sim. Não há fidelidade nos planos do Stig.</p></details>
     </div>
+  </div>
+</section>
+
+<!-- Vídeo institucional: remover o atributo hidden e trocar o src quando o vídeo estiver pronto. -->
+<section id="video" hidden>
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Em 1 minuto</span><h2>Conheça <em>o Stig.</em></h2></div>
+    <div class="video-frame"><video controls preload="none" poster="assets/og.png"><source src="assets/stig-institucional.mp4" type="video/mp4"></video></div>
   </div>
 </section>
 

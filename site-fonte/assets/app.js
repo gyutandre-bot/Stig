@@ -28,7 +28,7 @@
     var upd = function () {
       var ped = +$("#c-ped").value, tk = +$("#c-tk").value, com = +$("#c-com").value / 10;
       var plano = $("input[name=c-plano]:checked").value;
-      var stig = plano === "pro" ? 400 : 200;
+      var stig = plano === "pro" ? 299 : 149;
       $("#o-ped").textContent = ped;
       $("#o-tk").textContent = brl.format(tk);
       $("#o-com").textContent = com.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + "%";
@@ -146,4 +146,17 @@
   });
 
   var y = $("#year"); if (y) y.textContent = new Date().getFullYear();
+
+  // ---------- revelação suave ao rolar (o conteúdo nunca fica escondido sem o script) ----------
+  var rv = $$(".rv");
+  if (rv.length && "IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.documentElement.classList.add("js");
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    rv.forEach(function (el) {
+      if (el.getBoundingClientRect().top < innerHeight) el.classList.add("in"); else io.observe(el);
+    });
+    setTimeout(function () { rv.forEach(function (el) { el.classList.add("in"); }); }, 4000);
+  }
 })();
